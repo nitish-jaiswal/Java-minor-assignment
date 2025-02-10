@@ -29,4 +29,8 @@ public class Calculator {
         }
         scanner.close();
     }
+    // Check if expression contains only valid characters
+    private static boolean isValidExpression(String expression) {
+        return expression.matches("^[0-9+\\-*/()\\s]+$");
+    }
 }
