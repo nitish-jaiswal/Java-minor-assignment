@@ -41,7 +41,7 @@ public class Calculator {
         return calculatePostfix(infixToPostfix(expression.replaceAll("\\s+", "")));
     }
 
-    // Convert infix to postfix notation
+    // Convert infix to postfix notation for calculation
     private static String infixToPostfix(String infix) {
         StringBuilder postfix = new StringBuilder();
         Stack<Character> operators = new Stack<>();
